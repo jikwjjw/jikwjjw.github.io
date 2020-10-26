@@ -79,7 +79,7 @@ body a {
   text-decoration: none;
 }
 body a:hover {
-  color: #ffbe5b;
+  color: #d3d3d3;
 }
 body a,
 body a:hover {
@@ -145,15 +145,15 @@ body ul {
   transition: all 0.3s cubic-bezier(0.25, 0.5, 0.5, 0.9);
 }
 *::selection {
-  background: #ffbe5b;
+  background: #d3d3d3;
   color: #fff;
 }
 *::-moz-selection {
-  background: #ffbe5b;
+  background: #d3d3d3;
   color: #fff;
 }
 *::-webkit-selection {
-  background: #ffbe5b;
+  background: #d3d3d3;
   color: #fff;
 }
 .container {
@@ -675,7 +675,7 @@ body ul {
   padding: 1em;
   font-family: 'Quicksand', 'Vollkorn', serif;
   font-weight: 300;
-  color: #000;
+  color: #fff;
   margin: 0;
 }
 @media (max-width: 768px) {
@@ -779,7 +779,7 @@ body ul {
   font-size: 1.5em;
 }
 .fab:hover {
-  background-color: #ffbe5b;
+  background-color: #d3d3d3;
   cursor: pointer;
 }
 .fab-hide {
@@ -1222,7 +1222,7 @@ body ul {
   background-color: #f6f8fa;
   padding: 2px 5px;
   border-radius: 2px;
-  color: #ffbe5b;
+  color: #d3d3d3;
 }
 .article .wrap .main .content a {
   text-decoration: underline;
@@ -1279,7 +1279,7 @@ body ul {
   margin: 0 0 1em;
   padding: 15px 20px;
   background-color: #f6f8fa;
-  border-left: 4px solid #ffbe5b;
+  border-left: 4px solid #d3d3d3;
 }
 .article .wrap .main .content blockquote p {
   margin: 0;
@@ -1288,7 +1288,7 @@ body ul {
   margin-top: 50px;
 }
 .article .wrap .main .extra .copyright {
-  border-left: 4px solid #ffbe5b;
+  border-left: 4px solid #d3d3d3;
   background-color: #f6f8fa;
   list-style: none;
   padding: 15px 20px;
@@ -1373,7 +1373,7 @@ body ul {
 }
 .article .wrap .main .extra .tag-list .tag-list-item:hover {
   cursor: pointer;
-  background-color: #ffbe5b;
+  background-color: #d3d3d3;
 }
 .article .wrap .main .extra .tag-list .tag-list-item:hover a {
   color: #fff;
@@ -1396,7 +1396,7 @@ body ul {
   text-align: center;
 }
 .article .wrap .main .comments .btn:hover {
-  background-color: #ffbe5b;
+  background-color: #d3d3d3;
   color: #fff;
   transition: all 0.3s cubic-bezier(0.25, 0.5, 0.5, 0.9);
   cursor: pointer;
@@ -1491,7 +1491,7 @@ body ul {
   margin-right: 10px;
 }
 .tags a:hover {
-  background-color: #ffbe5b;
+  background-color: #d3d3d3;
   color: #fff !important;
 }
 .categories {
