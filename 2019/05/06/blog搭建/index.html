@@ -7,13 +7,14 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>博客 - jiawei</title>
+  <title>Blog搭建 - jiawei</title>
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="google" content="notranslate" />
 
   
   
+  <meta name="description" content="blog搭建下载nodejs下载git for win..."> 
   
   <meta name="author" content="jiawei"> 
 
@@ -70,7 +71,7 @@
         loadingImage: '',
       },
       donate: {
-        enable: true,
+        enable: false,
         alipay: '',
         wechat: ''
       },
@@ -105,7 +106,7 @@
 
 <nav class="navbar">
   <div class="left"></div>
-  <div class="center">分类</div>
+  <div class="center">Blog搭建</div>
   <div class="right">
     <i class="iconfont iconmenu j-navbar-menu"></i>
   </div>
@@ -144,57 +145,108 @@
       <li class="menu-item"><a href="/about " class="underline"> 关于</a></li>
       
     </ul>
-    <div class="menu-copyright"><p>Powered by <a target="_blank" href="https://hexo.io">Hexo</a>  |  Author - <a target="_blank" href="https://github.com/jikwjjw">jiawei</a></p></div>
+    <div class="menu-copyright">Author - <a target="_blank" href="https://github.com/jikwjjw">jiawei</a></p></div>
   </div>
 </nav>
   <main id="main">
-  <section class="archive">
-    <div class="archive-container">
-      <div class="archive-post">
-        <h3 class="archive-total"># 博客</h3>
-        
-        
-        
-        <h3 class="archive-year">2020</h3>
-        
-        <div class="archive-item">
-          <a class="archive-date" href="/2020/05/05/git%E4%BB%A3%E7%90%86%E9%85%8D%E7%BD%AE/">05/05</a>
-          <a class="archive-title" href="/2020/05/05/git%E4%BB%A3%E7%90%86%E9%85%8D%E7%BD%AE/">git代理配置</a>
-        </div>
-        
-      </div>
+  <div class="container" id="container">
+    <article class="article">
+  <div class="wrap">
+    <section class="head">
+  <img   class="lazyload" data-original="/images/paper/blog.png" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="  draggable="false">
+  <div class="head-mask">
+    <h1 class="head-title">Blog搭建</h1>
+    <div class="head-info">
+      <span class="post-info-item"><i class="iconfont iconcalendar"></i>May 06, 2019</span
+        class="post-info-item">
+      
+      <span class="post-info-item"><i class="iconfont iconfont-size"></i>1158</span>
     </div>
-  </section>
+  </div>
+</section>
+    <section class="main">
+      <section class="content">
+        <h1 id="blog搭建"><a href="#blog搭建" class="headerlink" title="blog搭建"></a>blog搭建</h1><h2 id="下载nodejs"><a href="#下载nodejs" class="headerlink" title="下载nodejs"></a>下载nodejs</h2><h2 id="下载git-for-windos"><a href="#下载git-for-windos" class="headerlink" title="下载git for windos"></a>下载git for windos</h2><blockquote>
+<p>配置git ssh</p>
+<p>配置环境变量 cmd git</p>
+</blockquote>
+<h3 id="新建GitHub仓库-名字为jikwjjw-github-io"><a href="#新建GitHub仓库-名字为jikwjjw-github-io" class="headerlink" title="新建GitHub仓库 名字为jikwjjw.github.io"></a>新建GitHub仓库 名字为jikwjjw.github.io</h3><h3 id="E盘新建-blog-文件夹"><a href="#E盘新建-blog-文件夹" class="headerlink" title="E盘新建 blog 文件夹"></a>E盘新建 blog 文件夹</h3><blockquote>
+<p>cd e:/blog</p>
+<p>下载hexo  hexo官方文档中有下载方式    </p>
+<blockquote>
+<p>阿里镜像源：npm config set registry <a target="_blank" rel="noopener" href="https://registry.npm.taobao.org/">https://registry.npm.taobao.org/</a></p>
+<p>确认是否切换成功：npm config get registry</p>
+</blockquote>
+<blockquote>
+<p>E:\bolg&gt;npm install -g hexo-cli（可以用阿里的镜像源加速）</p>
+<p>E:\bolg&gt;hexo init jikwjjw</p>
+<p>E:\bolg&gt;cd jikwjjw</p>
+<p>E:\bolg\jikwjjw&gt;npm install</p>
+</blockquote>
+<p>E:\bolg\jikwjjw&gt;hexo s -p 5555  (<a href="http://localhost:5555):配置端口">http://localhost:5555):配置端口</a></p>
+</blockquote>
+<h3 id="下载Sublime"><a href="#下载Sublime" class="headerlink" title="下载Sublime"></a>下载Sublime</h3><blockquote>
+<p>把blog拖进Sublime中</p>
+</blockquote>
+<h3 id="修改内容"><a href="#修改内容" class="headerlink" title="修改内容"></a>修改内容</h3><blockquote>
+<p>修改source -&gt;_posts -&gt; helloWorld.md即可</p>
+</blockquote>
+<h3 id="部署内容"><a href="#部署内容" class="headerlink" title="部署内容"></a>部署内容</h3><blockquote>
+<p>在hexo文档中有(部署)，修改配置文件说明</p>
+<blockquote>
+<p>修改deploy中的</p>
+<blockquote>
+<p>type : git</p>
+<p>repo : <a target="_blank" rel="noopener" href="https://github.com/jikwjjw/jikwjjw.github.io.git">https://github.com/jikwjjw/jikwjjw.github.io.git</a></p>
+<p>branch: master</p>
+</blockquote>
+<p>16行 : url : <a href="https://jikwjjw.github.io/">https://jikwjjw.github.io</a></p>
+<p>author : jikwjjw</p>
+</blockquote>
+<p>安装git插件：</p>
+<blockquote>
+<p>E:\bolg\jikwjjw&gt;npm install hexo-deployer-git –save</p>
+</blockquote>
+<p>部署完成运行（可能需要配置github密码等）：</p>
+<blockquote>
+<p>cmd E:\bolg\jikwjjw&gt;hexo g</p>
+<p>cmd E:\bolg\jikwjjw&gt;hexo d</p>
+<p><code>Username for &#39;https://github.com&#39;:</code> 输入的是github上的邮箱账号<br><code>Password for &#39;https://你的github邮箱@github.com&#39;:</code> 输入github的登录密码,点击enter键即可.</p>
+</blockquote>
+</blockquote>
+<h3 id="主题修改"><a href="#主题修改" class="headerlink" title="主题修改"></a>主题修改</h3><blockquote>
+<p>在<a target="_blank" rel="noopener" href="https://hexo.io/themes/">https://hexo.io/themes/</a> 下载一款主题，解压缩到E:\bolg\jikwjjw\themes中</p>
+<p>修改配置文件中的 theme : next 即可</p>
+<blockquote>
+<p>E:\bolg\jikwjjw&gt;hexo s -p 5555  (<a href="http://localhost:5555):本地预览">http://localhost:5555):本地预览</a></p>
+<p>百度hexo next的使用即可</p>
+</blockquote>
+</blockquote>
+
+      </section>
+      <section class="extra">
+        
+        
+        
+  <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Blog/" rel="tag">Blog</a></li></ul>
+
+        
+<nav class="nav">
+  
+    <a href="/2019/05/07/%E5%8F%91%E8%A1%A8blog/"><i class="iconfont iconleft"></i>发表blog</a>
+  
+  
+</nav>
+
+      </section>
+      
+    </section>
+  </div>
+</article>
+  </div>
 </main>
   <footer class="footer">
   <div class="footer-social">
-    
-    
-    
-    
-    
-    <a href="tencent://message/?Menu=yes&uin=894519210 " target="_blank" onMouseOver="this.style.color= '#12B7F5'"
-      onMouseOut="this.style.color='#33333D'">
-      <i class="iconfont footer-social-item  iconQQ "></i>
-    </a>
-    
-    
-    
-    
-    
-    <a href="javascript:; " target="_blank" onMouseOver="this.style.color= '#09BB07'"
-      onMouseOut="this.style.color='#33333D'">
-      <i class="iconfont footer-social-item  iconwechat-fill "></i>
-    </a>
-    
-    
-    
-    
-    
-    <a href="https://www.instagram.com/izhaoo/ " target="_blank" onMouseOver="this.style.color= '#DA2E76'"
-      onMouseOut="this.style.color='#33333D'">
-      <i class="iconfont footer-social-item  iconinstagram "></i>
-    </a>
     
     
     
@@ -205,17 +257,8 @@
       <i class="iconfont footer-social-item  icongithub-fill "></i>
     </a>
     
-    
-    
-    
-    
-    <a href="mailto:13723304305@163.com " target="_blank" onMouseOver="this.style.color='#D3D3D3'"
-      onMouseOut="this.style.color='#33333D'">
-      <i class="iconfont footer-social-item  iconmail"></i>
-    </a>
-    
   </div>
-  <div class="footer-copyright"><p>Powered by <a target="_blank" href="https://hexo.io">Hexo</a>  |  Author - <a target="_blank" href="https://github.com/jikwjjw">jiawei</a></p></div>
+  <div class="footer-copyright">Author - <a target="_blank" href="https://github.com/jikwjjw">jiawei</a></p></div>
 </footer>
   
       <div class="fab fab-plus">
