@@ -7,7 +7,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>标签 - jiawei</title>
+  <title>Anaconda - jiawei</title>
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="google" content="notranslate" />
@@ -15,7 +15,10 @@
   
   <meta name="keywords" content="undefined"> 
   
-  <meta name="description" content="keywords: 看不见的地方一样重要"> 
+  <meta name="description" content="Anaconda基本命令  #副标题
+
+
+Anacon..."> 
   
   <meta name="author" content="jiawei"> 
 
@@ -107,7 +110,7 @@
 
 <nav class="navbar">
   <div class="left"></div>
-  <div class="center">标签</div>
+  <div class="center">Anaconda</div>
   <div class="right">
     <i class="iconfont iconmenu j-navbar-menu"></i>
   </div>
@@ -150,13 +153,126 @@
   </div>
 </nav>
   <main id="main">
-  <section class="categories">
-    <header class="header">
-  <h1 class="header-title">分类</h1>
-  <p class="header-subtitle">共: 3 个</p>
-</header>
-    <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%8D%9A%E5%AE%A2/">博客</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/CNN/">CNN</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/GIT/">GIT</a><span class="category-list-count">1</span></li></ul>
-  </section>
+  <div class="container" id="container">
+    <article class="article">
+  <div class="wrap">
+    <section class="head">
+  <img   class="lazyload" data-original="/images/paper/anaconda.jpg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="  draggable="false">
+  <div class="head-mask">
+    <h1 class="head-title">Anaconda</h1>
+    <div class="head-info">
+      <span class="post-info-item"><i class="iconfont iconcalendar"></i>May 09, 2019</span
+        class="post-info-item">
+      
+      <span class="post-info-item"><i class="iconfont iconfont-size"></i>885</span>
+    </div>
+  </div>
+</section>
+    <section class="main">
+      <section class="content">
+        <h1 id="Anaconda-基本命令"><a href="#Anaconda-基本命令" class="headerlink" title="Anaconda 基本命令"></a>Anaconda 基本命令</h1><ul>
+<li><p>检查Anaconda是否成功安装：</p>
+<blockquote>
+<p><code>conda --version</code></p>
+</blockquote>
+</li>
+<li><p>检测目前安装了哪些环境:</p>
+<blockquote>
+<p><code>conda info --envs </code></p>
+<p><code>conda env list</code></p>
+</blockquote>
+</li>
+<li><p>创建虚拟环境:</p>
+<blockquote>
+<p><code>conda create --name tensorflow python=3.6</code></p>
+</blockquote>
+</li>
+<li><p>激活虚拟环境:</p>
+<blockquote>
+<p><code>activate tensorflow</code></p>
+</blockquote>
+</li>
+<li><ul>
+<li>退出虚拟环境:</li>
+</ul>
+<blockquote>
+<p><code>deactivate</code></p>
+</blockquote>
+</li>
+<li><p>卸载虚拟环境:</p>
+<blockquote>
+<p><code>conda remove --name tensorflow--all</code></p>
+</blockquote>
+</li>
+<li><p>查看python版本</p>
+<blockquote>
+<p><code>python --version </code></p>
+</blockquote>
+</li>
+<li><p>搜索相关包:</p>
+<blockquote>
+<p><code>conda search --full-name tensorflow </code></p>
+</blockquote>
+</li>
+<li><p>列举包:</p>
+<blockquote>
+<p><code>conda list</code></p>
+</blockquote>
+</li>
+<li><p>安装第三方包:</p>
+<blockquote>
+<p><code>pip install requests</code></p>
+</blockquote>
+</li>
+<li><p>卸载第三方包:</p>
+<blockquote>
+<p><code>pip uninstall requests</code></p>
+</blockquote>
+</li>
+</ul>
+<h1 id="解决conda-pip-install-下载速度慢"><a href="#解决conda-pip-install-下载速度慢" class="headerlink" title="解决conda/pip install 下载速度慢"></a>解决conda/pip install 下载速度慢</h1><h3 id="conda数据源管理"><a href="#conda数据源管理" class="headerlink" title="conda数据源管理"></a>conda数据源管理</h3><ul>
+<li><p>显示目前conda的数据源</p>
+<blockquote>
+<p><code>conda config --show channels</code></p>
+<p>数据源在*#本人的 ~/.condarc*</p>
+</blockquote>
+</li>
+<li><p>添加数据源：例如, 添加清华anaconda镜像</p>
+<blockquote>
+<p><code>conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/ </code></p>
+<p><code>conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/ </code></p>
+<p><code>conda config --set show_channel_urls yes</code></p>
+</blockquote>
+</li>
+<li><p>删除数据源</p>
+<blockquote>
+<p><code>conda config --remove channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/</code></p>
+</blockquote>
+</li>
+</ul>
+      </section>
+      <section class="extra">
+        
+        
+        
+  <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/anaconda/" rel="tag">anaconda</a></li></ul>
+
+        
+<nav class="nav">
+  
+    <a href="/2020/05/05/git%E4%BB%A3%E7%90%86%E9%85%8D%E7%BD%AE/"><i class="iconfont iconleft"></i>git代理配置</a>
+  
+  
+    <a href="/2019/05/07/%E5%8F%91%E8%A1%A8blog/">发表blog<i class="iconfont iconright"></i></a>
+  
+</nav>
+
+      </section>
+      
+    </section>
+  </div>
+</article>
+  </div>
 </main>
   <footer class="footer">
   <div class="footer-social">
