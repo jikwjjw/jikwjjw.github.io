@@ -164,7 +164,7 @@ Anaconda 基本...">
       <span class="post-info-item"><i class="iconfont iconcalendar"></i>May 09, 2019</span
         class="post-info-item">
       
-      <span class="post-info-item"><i class="iconfont iconfont-size"></i>880</span>
+      <span class="post-info-item"><i class="iconfont iconfont-size"></i>878</span>
     </div>
   </div>
 </section>
@@ -173,80 +173,80 @@ Anaconda 基本...">
         <h1 id="Anaconda-基本命令"><a href="#Anaconda-基本命令" class="headerlink" title="Anaconda 基本命令"></a>Anaconda 基本命令</h1><ul>
 <li><p>检查Anaconda是否成功安装：</p>
 <blockquote>
-<p><code>conda --version</code></p>
+<p>conda –version</p>
 </blockquote>
 </li>
 <li><p>检测目前安装了哪些环境:</p>
 <blockquote>
-<p><code>conda info --envs </code></p>
-<p><code>conda env list</code></p>
+<p>conda info –envs </p>
+<p>conda env list</p>
 </blockquote>
 </li>
 <li><p>创建虚拟环境:</p>
 <blockquote>
-<p><code>conda create --name tensorflow python=3.6</code></p>
+<p>conda create –name tensorflow python=3.6</p>
 </blockquote>
 </li>
 <li><p>激活虚拟环境:</p>
 <blockquote>
-<p><code>activate tensorflow</code></p>
+<p>activate tensorflow</p>
 </blockquote>
 </li>
-<li><ul>
-<li>退出虚拟环境:</li>
-</ul>
+<li><p>退出虚拟环境:</p>
 <blockquote>
-<p><code>deactivate</code></p>
+<p>deactivate</p>
 </blockquote>
 </li>
 <li><p>卸载虚拟环境:</p>
 <blockquote>
-<p><code>conda remove --name tensorflow--all</code></p>
+<p>conda remove –name tensorflow–all</p>
 </blockquote>
 </li>
+</ul>
+<h3 id="conda数据源管理"><a href="#conda数据源管理" class="headerlink" title="conda数据源管理"></a>conda数据源管理</h3><ul>
 <li><p>查看python版本</p>
 <blockquote>
-<p><code>python --version </code></p>
+<p>python –version </p>
 </blockquote>
 </li>
 <li><p>搜索相关包:</p>
 <blockquote>
-<p><code>conda search --full-name tensorflow </code></p>
+<p>conda search –full-name tensorflow </p>
 </blockquote>
 </li>
 <li><p>列举包:</p>
 <blockquote>
-<p><code>conda list</code></p>
+<p>conda list</p>
 </blockquote>
 </li>
 <li><p>安装第三方包:</p>
 <blockquote>
-<p><code>pip install requests</code></p>
+<p>pip install requests</p>
 </blockquote>
 </li>
 <li><p>卸载第三方包:</p>
 <blockquote>
-<p><code>pip uninstall requests</code></p>
+<p>pip uninstall requests</p>
 </blockquote>
 </li>
 </ul>
-<h1 id="解决conda-pip-install-下载速度慢"><a href="#解决conda-pip-install-下载速度慢" class="headerlink" title="解决conda/pip install 下载速度慢"></a>解决conda/pip install 下载速度慢</h1><h3 id="conda数据源管理"><a href="#conda数据源管理" class="headerlink" title="conda数据源管理"></a>conda数据源管理</h3><ul>
+<h1 id="解决conda-pip-install-下载速度慢"><a href="#解决conda-pip-install-下载速度慢" class="headerlink" title="解决conda/pip install 下载速度慢"></a>解决conda/pip install 下载速度慢</h1><h3 id="conda数据源管理-1"><a href="#conda数据源管理-1" class="headerlink" title="conda数据源管理"></a>conda数据源管理</h3><ul>
 <li><p>显示目前conda的数据源</p>
 <blockquote>
-<p><code>conda config --show channels</code></p>
+<p>conda config –show channels</p>
 <p>数据源在*#本人的 ~/.condarc*</p>
 </blockquote>
 </li>
 <li><p>添加数据源：例如, 添加清华anaconda镜像</p>
 <blockquote>
-<p><code>conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/ </code></p>
-<p><code>conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/ </code></p>
-<p><code>conda config --set show_channel_urls yes</code></p>
+<p>conda config –add channels <a target="_blank" rel="noopener" href="https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/">https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/</a> </p>
+<p>conda config –add channels <a target="_blank" rel="noopener" href="https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/">https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/</a> </p>
+<p>conda config –set show_channel_urls yes</p>
 </blockquote>
 </li>
 <li><p>删除数据源</p>
 <blockquote>
-<p><code>conda config --remove channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/</code></p>
+<p>conda config –remove channels <a target="_blank" rel="noopener" href="https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/">https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/</a></p>
 </blockquote>
 </li>
 </ul>
