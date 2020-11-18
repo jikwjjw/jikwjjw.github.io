@@ -7,7 +7,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>标签 - jiawei</title>
+  <title>神经网络过拟合和欠拟合 - jiawei</title>
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="google" content="notranslate" />
@@ -15,7 +15,13 @@
   
   <meta name="keywords" content="undefined"> 
   
-  <meta name="description" content="keywords: 看不见的地方一样重要"> 
+  <meta name="description" content="奥卡姆剃刀原则
+
+
+
+奥卡姆剃刀原则
+
+如果一件事有两..."> 
   
   <meta name="author" content="jiawei"> 
 
@@ -107,7 +113,7 @@
 
 <nav class="navbar">
   <div class="left"></div>
-  <div class="center">标签</div>
+  <div class="center">神经网络过拟合和欠拟合</div>
   <div class="right">
     <i class="iconfont iconmenu j-navbar-menu"></i>
   </div>
@@ -150,13 +156,116 @@
   </div>
 </nav>
   <main id="main">
-  <section class="categories">
-    <header class="header">
-  <h1 class="header-title">分类</h1>
-  <p class="header-subtitle">共: 4 个</p>
-</header>
-    <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/CNN/">CNN</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%8D%9A%E5%AE%A2/">博客</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/GIT/">GIT</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/WINDOS/">WINDOS</a><span class="category-list-count">1</span></li></ul>
-  </section>
+  <div class="container" id="container">
+    <article class="article">
+  <div class="wrap">
+    <section class="head">
+  <img   class="lazyload" data-original="/images/paper/occam.jpg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="  draggable="false">
+  <div class="head-mask">
+    <h1 class="head-title">神经网络过拟合和欠拟合</h1>
+    <div class="head-info">
+      <span class="post-info-item"><i class="iconfont iconcalendar"></i>November 14, 2019</span
+        class="post-info-item">
+      
+      <span class="post-info-item"><i class="iconfont iconfont-size"></i>889</span>
+    </div>
+  </div>
+</section>
+    <section class="main">
+      <section class="content">
+        <ul>
+<li><p>奥卡姆剃刀原则</p>
+<blockquote>
+<p>如果一件事有两种解释，那么最可能正确的解释就是最简单那个，即假设更好的那个</p>
+<p>给定一些训练数据和一种网络架构，很多组权重值(即很多模型)都可以解释这些数据——简单模型比复杂模型更不容易拟合</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="优化与泛化"><a href="#优化与泛化" class="headerlink" title="优化与泛化"></a>优化与泛化</h2><ul>
+<li><p>优化</p>
+<blockquote>
+<p>调节模型以在训练数据上得到最佳性能(即机器学习中的学习)</p>
+</blockquote>
+</li>
+<li><p>泛化</p>
+<blockquote>
+<p>训练好的模型在前所未见的数据上的性能好坏</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="欠拟合"><a href="#欠拟合" class="headerlink" title="欠拟合"></a>欠拟合</h2><ul>
+<li><p>欠拟合</p>
+<blockquote>
+<p>训练数据上的损失越小，测试数据上的损失也越小。</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="过拟合"><a href="#过拟合" class="headerlink" title="过拟合"></a>过拟合</h2><ul>
+<li><p>过拟合</p>
+<blockquote>
+<p>在训练数据上迭代一定次数之后，泛化不在提高，验证指标先是不变，然后开始变差，即模型开始过拟合</p>
+<p>这时模型开始学习仅和训练数据有关的模式，但这种模式对新数据来说是错误的或无关紧要的</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="过拟合解决方法"><a href="#过拟合解决方法" class="headerlink" title="过拟合解决方法"></a>过拟合解决方法</h2><ul>
+<li><p>添加权重正则化</p>
+<blockquote>
+<p>强制让模型权重只能取较小的值，从而限制模型的复杂度</p>
+</blockquote>
+<ul>
+<li><p>L1,L2正则化</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> keras <span class="keyword">import</span> regularizers</span><br><span class="line"><span class="comment"># l2(0.001)的意思是该层权重矩阵的每个系数的都会使网络的总损失增加0.001*weight_confficient_value</span></span><br><span class="line"><span class="comment"># 注意，由于这个惩罚项只在训练时添加，所以这个网络的训练损失会比测试损失大很多</span></span><br><span class="line">model.add(Dense(<span class="number">16</span>, kernel_regularizer=regularizers.l2(<span class="number">0.001</span>)))</span><br><span class="line">model.add(Dense(<span class="number">16</span>, kernel_regularizer=regularizers.l1_l2(l1=<span class="number">0.001</span>,l2=<span class="number">0.001</span>))</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>添加dropout正则化</p>
+<blockquote>
+<p>对某一层使用dropout，就是在训练过程中随机将该层的一些输出特征舍弃(设置为0)。</p>
+</blockquote>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">model.add(layers.Dropout(<span class="number">0.5</span>))</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>减小网络容量</p>
+<blockquote>
+<p>减小模型大小，减少模型中可学习参数的个数</p>
+</blockquote>
+</li>
+<li><p>获取更多的训练数据</p>
+<blockquote>
+<p>K折验证，带有打乱数据的K折验证等</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="训练集，验证集，测试集"><a href="#训练集，验证集，测试集" class="headerlink" title="训练集，验证集，测试集"></a>训练集，验证集，测试集</h2><ul>
+<li><p><strong>三个集合 :</strong> </p>
+<blockquote>
+<p>在训练数据上训练模型，在验证数据上评估模型，一旦找到了最佳参数，就在测试数据上最后测试一次</p>
+</blockquote>
+</li>
+</ul>
+      </section>
+      <section class="extra">
+        
+        
+        
+  <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/tensor/" rel="tag">tensor</a></li></ul>
+
+        
+<nav class="nav">
+  
+    <a href="/2020/05/05/git%E4%BB%A3%E7%90%86%E9%85%8D%E7%BD%AE/"><i class="iconfont iconleft"></i>git代理配置</a>
+  
+  
+    <a href="/2019/11/12/windos%E5%B8%B8%E7%94%A8/">windos常用快捷键<i class="iconfont iconright"></i></a>
+  
+</nav>
+
+      </section>
+      
+    </section>
+  </div>
+</article>
+  </div>
 </main>
   <footer class="footer">
   <div class="footer-social">
